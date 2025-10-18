@@ -1,0 +1,23 @@
+{
+  "name": "playwright_bdd_js",
+  "version": "1.0.0",
+  "description": "Playwright BDD framework development using JavaScript with Page Object Model",
+  "main": "index.js",
+  "scripts": {
+    "runAll": "npx cucumber-js ./features/automationexercise/scenario.feature --format html:reports/report.html --format json:reports/report.json --exit",
+    "test": "npx cucumber-js --parallel 2 --retry 1 --tags \"@tc1\" --format html:reports/report.html --format json:reports/report.json --exit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VinothVinodhan/Playwright_BDD_JS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "playwright": "^1.56.1"
+  },
+  "dependencies": {
+    "@cucumber/cucumber": "^12.2.0"
+  }
+}
